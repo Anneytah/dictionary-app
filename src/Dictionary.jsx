@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./index.css"
 import axios from "axios";
 import Results from "./Results";
 
@@ -23,12 +24,12 @@ const Dictionary = () => {
 
   return (
     <div>
-      <h1>What word do you want to look up?</h1>
-      <form onSubmit={showSearch} className="pb-8">
+      <h1 className="font-sans text-2xl pb-3">What word do you want to look up?</h1>
+      <form onSubmit={showSearch} className="pb-8 max-w-md  py-3">
         <input
           placeholder="Type a word..."
           type="search"
-          className="border-2 border-black rounded-sm "
+          className="p-3 border border-gray-300 rounded-md w-full"
           onChange={handleChange}
         />
       </form>

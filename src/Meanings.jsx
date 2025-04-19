@@ -1,21 +1,27 @@
 import React from "react";
+import Synonyms from "./Synonyms";
 
 const Meanings = (props) => {
   return (
     <div>
-      <h2 className="">{props.meaning.partOfSpeech}</h2>
+      <h2 className="font-semibold capitalize">{props.meaning.partOfSpeech}</h2>
 
       {props.meaning.definitions.map(function (definition, index) {
         return (
           <div key={index} className="my-2">
             <p>
-              Definition: {definition.definition}
+              <strong>Definition:</strong> {definition.definition}
               <br />
-              <em>Example: {definition.example}</em>
+              <em>
+                {" "}
+                <strong>Example:</strong> {definition.example}
+              </em>
             </p>
+            <Synonyms synonyms={definition.synonyms} />
           </div>
         );
       })}
+
     </div>
   );
 };
