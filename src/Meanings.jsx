@@ -17,11 +17,11 @@ const Meanings = (props) => {
                 <strong>Example:</strong> {definition.example}
               </em>
             </p>
-            <Synonyms synonyms={definition.synonyms} />
           </div>
         );
       })}
 
+      <Synonyms synonyms={props.meaning.synonyms} />
     </div>
   );
 };
