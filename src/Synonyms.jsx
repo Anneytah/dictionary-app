@@ -4,13 +4,12 @@ const Synonyms = (props) => {
 
   if (props.synonyms) {
     return (
-      <ul className="list-disc">
-        <strong>Synonyms:</strong> <br />
+      <div className="my-4 p-0 ">
         {props.synonyms.map(function(synonyms, index){
-          return <li key={index}>
-            {synonyms}</li>;
+          return <p key={index}  className="inline-block text-sm border-1 text-center m-1 p-1.5 rounded-full">
+            {synonyms}</p>;
         })}
-      </ul>
+      </div>
     );
   } else {
     return null;

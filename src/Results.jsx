@@ -6,14 +6,18 @@ const Results = (props) => {
   if (props.results) {
     return (
       <div>
-        <h1 className="text-3xl font-sans capitalize">{props.results.word}</h1>
-        {props.results.phonetics.map(function (phonetics, index){
-          return(
-            <div key={index}>
-            <Phonetic phonetics={phonetics} />
-            </div>
-          )
-        })}
+        <section className="bg-white my-4 p-6 rounded-md">
+          <h1 className="text-3xl font-sans py-2">
+            {props.results.word}
+          </h1>
+          {props.results.phonetics.map(function (phonetics, index) {
+            return (
+              <div key={index} className="py-2">
+                <Phonetic phonetics={phonetics} />
+              </div>
+            );
+          })}
+        </section>
 
         {props.results.meanings.map(function (meaning, index) {
           return (
@@ -25,7 +29,7 @@ const Results = (props) => {
       </div>
     );
   } else {
-    return null
+    return null;
   }
 };
 

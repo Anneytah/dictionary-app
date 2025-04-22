@@ -9,11 +9,11 @@ function App() {
       <div className="bg-[#f8f7fd] overflow-hidden">
         <div className="max-w-3xl h-full m-20 rounded-xl border-2 mx-auto p-10">
           <h1 className="text-red-300 font-bold text-5xl p-3 text-center">
-            DICTIONARY APP
+            DICTIONARY
           </h1>
 
           <p className="text-[#888] pb-10 text-center">
-            Welcome to my Dictionary Project with React
+            Welcome to my Dictionary Project built with React and Tailwind
           </p>
 
           <Dictionary />
