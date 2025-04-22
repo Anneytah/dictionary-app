@@ -6,8 +6,8 @@ const Results = (props) => {
   if (props.results) {
     return (
       <div>
-        <section className="bg-white my-4 p-6 rounded-md">
-          <h1 className="text-3xl font-sans py-2">
+        <section className="bg-white my-4 p-10 rounded-md">
+          <h1 className="text-3xl font-sans font-bold py-2">
             {props.results.word}
           </h1>
           {props.results.phonetics.map(function (phonetics, index) {

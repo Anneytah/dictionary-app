@@ -6,19 +6,19 @@ import Dictionary from "./Dictionary";
 function App() {
   return (
     <>
-      <div className="bg-[#f8f7fd] overflow-hidden">
-        <div className="max-w-3xl h-full m-20 rounded-xl border-2 mx-auto p-10">
-          <h1 className="text-red-300 font-bold text-5xl p-3 text-center">
+      <div className="bg-[#076767] overflow-hidden">
+        <div className="lg:max-w-5xl h-full m-20 rounded-xl mx-auto p-10">
+          <h1 className="text-[#888] font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl p-3 text-center">
             DICTIONARY
           </h1>
 
-          <p className="text-[#888] pb-10 text-center">
+          <p className="text-white pb-10 text-center text-sm sm:text-sm md:text-2xl lg:text-2xl">
             Welcome to my Dictionary Project built with React and Tailwind
           </p>
 
           <Dictionary />
 
-          <footer className="dictionary-footer">
+          <footer className="dictionary-footer text-white">
             This project was coded by
             <a href="https://github.com/Anneytah" target="_blank">
               {""} Aniago Somtochukwu

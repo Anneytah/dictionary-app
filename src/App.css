@@ -6,7 +6,7 @@
 .dictionary-footer {
   text-align: center;
   font-size: 13px;
-  color: rgba(0, 0, 0, 0.6);
+  /* color: #1f2937; */
   border-top: 1px solid rgb(249, 247, 254);
-  padding: 20px 0px;
+  padding: 40px 0px;
 }

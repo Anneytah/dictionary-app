@@ -13,7 +13,7 @@ const Meanings = (props) => {
         {props.meaning.definitions.map(function (definition, index) {
           if (index < 4){
             return (
-              <div key={index} className="mx-6 ">
+              <div key={index} className="mx-10">
                 <ul className="list-disc">
                 <li>{definition.definition}</li>
                 </ul>
